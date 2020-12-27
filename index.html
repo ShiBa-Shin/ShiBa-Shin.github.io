@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" />
+  <script src="./bundle.js" defer></script>
+  <title>Groundhog Time</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+
+    <button id="link-btn"></button>
+    <button id="reset-btn"></button>
+
+    <div id="time-container">
+      <div id="days-container">
+        <div id="fixed-d-container">
+          <div id="fixed-d-a"></div>
+          <div id="fixed-d-b"></div>
+        </div>
+
+        <div id="flexible-d-container">
+          <div id="flexible-d-f"></div>
+          <div id="flexible-d-b"></div>
+        </div>
+      </div>
+      <div id="hours-container">
+        <div id="fixed-h-container">
+          <div id="fixed-h-a"></div>
+          <div id="fixed-h-b"></div>
+        </div>
+
+        <div id="flexible-h-container">
+          <div id="flexible-h-f"></div>
+          <div id="flexible-h-b"></div>
+        </div>
+      </div>
+      <div id="minutes-container">
+        <div id="fixed-m-container">
+          <div id="fixed-m-a"></div>
+          <div id="fixed-m-b"></div>
+        </div>
+
+        <div id="flexible-m-container">
+          <div id="flexible-m-f"></div>
+          <div id="flexible-m-b"></div>
+        </div>
+      </div>
+      <div id="seconds-container">
+        <div id="fixed-s-container">
+          <div id="fixed-s-a"></div>
+          <div id="fixed-s-b"></div>
+        </div>
+
+        <div id="flexible-s-container">
+          <div id="flexible-s-f"></div>
+          <div id="flexible-s-b"></div>
+        </div>
+      </div>
+    </div>
+
+    <ul id="menu"></ul>
+    <button id="menu-btn">SHOW LIST</button>
+    <button id="plus-btn"></button>
+
+    <div id="blur-bg"></div>
+
+    <div id="form-container">
+      <form id="form">
+        <h2>Add an event</h2>
+        <div id="input-blocks">
+          <div class="input-block">
+            <label for="month-input">Month</label>
+            <input id="month-input"
+                   type="text"
+                   placeholder="Enter month"
+                   autocomplete="off">
+            <small></small>
+          </div>
+          <div class="input-block">
+            <label for="date-input">Date</label>
+            <input id="date-input"
+                   type="text"
+                   placeholder="Enter date"
+                   autocomplete="off">
+            <small></small>
+          </div>
+          <div class="input-block">
+            <label for="event-input">Event name</label>
+            <input id="event-input"
+                   type="text"
+                   placeholder="Enter event name"
+                   autocomplete="off">
+            <small></small>
+          </div>
+        </div>
+        <div id="button-container">
+          <button id="submit-btn" type="submit">ADD</button>
+          <button id="cancel-btn">CANCEL</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="modal">
+      <h3 id="modal-title"></h3>
+      <p id="warning-msg"></p>
+      <div id="modal-btn-ctn">
+        <button id="confirm-btn">CONFIRM</button>
+        <button id="abort-btn">ABORT</button>
+      </div>
+    </div>
+</body>
+</html>
